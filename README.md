@@ -35,7 +35,7 @@ Certifique-se de ter o Python instalado e as chaves de API dos provedores que de
 ### 2. Instalação
 ```bash
 # Clone o repositório
-git clone [https://github.com/elieltondias/meta-prompt-efficiency-eval.git](https://github.com/elieltondias/meta-prompt-efficiency-eval.git)
+git clone https://github.com/elieltondias/meta-prompt-efficiency-eval.git
 
 # Instale as dependências
 pip install -r requirements.txt
