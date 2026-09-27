@@ -4,10 +4,36 @@
 # ambientes virtuais
 venv/
 env/
-.env/
 .venv/
+.env/
 
 # cache Python
-src/__pycache__/
 __pycache__/
-*.pyc
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# caches de ferramentas
+.ruff_cache/
+.pytest_cache/
+.mypy_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# resultados do benchmark
+results/*
+!results/.gitkeep
+*.csv
+
+# logs e artefatos de execução
+*.log
+
+# editores e sistema
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
