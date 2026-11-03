@@ -159,4 +159,4 @@ Veja mais detalhes em [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## 📄 Licença
 
-Distribuído sob a licença [MIT](LICENSE).
+
