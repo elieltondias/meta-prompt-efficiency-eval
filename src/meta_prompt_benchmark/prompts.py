@@ -1,14 +1,25 @@
+"""Construtores dos três estilos de prompt avaliados pelo benchmark."""
+
+from __future__ import annotations
+
+
 def build_manual_prompt(task: str) -> str:
+    """Monta o prompt direto e sem instruções adicionais."""
     return f"Resolva o seguinte problema:\n{task}"
 
+
 def build_ai_improved_prompt(task: str) -> str:
+    """Monta o prompt refinado com papel, contexto e pedido de raciocínio."""
     return (
-        f"Por favor, atue como um especialista altamente capacitado. "
-        f"Analise cuidadosamente o problema abaixo e forneça uma solução completa, "
-        f"clara e eficiente, explicando brevemente o seu raciocínio.\n\nProblema:\n{task}"
+        "Por favor, atue como um especialista altamente capacitado. "
+        "Analise cuidadosamente o problema abaixo e forneça uma solução completa, "
+        "clara e eficiente, explicando brevemente o seu raciocínio.\n\n"
+        f"Problema:\n{task}"
     )
 
+
 def build_meta_prompt(task: str, few_shot_example: str) -> str:
+    """Monta o prompt meta com role-playing, few-shot, chain of thought e auto-crítica."""
     return f"""[Role-Playing]
 Você é um Arquiteto de Software Sênior e um Matemático PhD, conhecido por sua lógica impecável e precisão extrema.
 

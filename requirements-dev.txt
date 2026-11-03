@@ -1,0 +1,4 @@
+# Ferramentas de desenvolvimento e qualidade.
+pre-commit>=3.7
+pytest>=8.0
+ruff>=0.9
